@@ -10,6 +10,8 @@
 		89A4213E21D0C38100CE8B74 /* ComponentPack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A4213421D0C38100CE8B74 /* ComponentPack.framework */; };
 		89A4214321D0C38100CE8B74 /* ComponentPackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A4214221D0C38100CE8B74 /* ComponentPackTests.swift */; };
 		89A4214521D0C38100CE8B74 /* ComponentPack.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A4213721D0C38100CE8B74 /* ComponentPack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89A4215021D0C4FC00CE8B74 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A4214F21D0C4FC00CE8B74 /* BannerView.swift */; };
+		89A4218B21D0C6FB00CE8B74 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A4218A21D0C6FB00CE8B74 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,6 +22,20 @@
 			remoteGlobalIDString = 89A4213321D0C38100CE8B74;
 			remoteInfo = ComponentPack;
 		};
+		89A4218221D0C52F00CE8B74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89A4217D21D0C52E00CE8B74 /* ComponentDemo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 89A4215A21D0C52D00CE8B74;
+			remoteInfo = ComponentDemo;
+		};
+		89A4218421D0C52F00CE8B74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89A4217D21D0C52E00CE8B74 /* ComponentDemo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 89A4216E21D0C52E00CE8B74;
+			remoteInfo = ComponentDemoTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +45,9 @@
 		89A4213D21D0C38100CE8B74 /* ComponentPackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComponentPackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A4214221D0C38100CE8B74 /* ComponentPackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentPackTests.swift; sourceTree = "<group>"; };
 		89A4214421D0C38100CE8B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89A4214F21D0C4FC00CE8B74 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		89A4217D21D0C52E00CE8B74 /* ComponentDemo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ComponentDemo.xcodeproj; path = ComponentDemo/ComponentDemo.xcodeproj; sourceTree = "<group>"; };
+		89A4218A21D0C6FB00CE8B74 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +72,7 @@
 		89A4212A21D0C38100CE8B74 = {
 			isa = PBXGroup;
 			children = (
+				89A4217D21D0C52E00CE8B74 /* ComponentDemo.xcodeproj */,
 				89A4213621D0C38100CE8B74 /* ComponentPack */,
 				89A4214121D0C38100CE8B74 /* ComponentPackTests */,
 				89A4213521D0C38100CE8B74 /* Products */,
@@ -71,6 +91,7 @@
 		89A4213621D0C38100CE8B74 /* ComponentPack */ = {
 			isa = PBXGroup;
 			children = (
+				89A4214E21D0C4E300CE8B74 /* Source */,
 				89A4213721D0C38100CE8B74 /* ComponentPack.h */,
 				89A4213821D0C38100CE8B74 /* Info.plist */,
 			);
@@ -84,6 +105,24 @@
 				89A4214421D0C38100CE8B74 /* Info.plist */,
 			);
 			path = ComponentPackTests;
+			sourceTree = "<group>";
+		};
+		89A4214E21D0C4E300CE8B74 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				89A4214F21D0C4FC00CE8B74 /* BannerView.swift */,
+				89A4218A21D0C6FB00CE8B74 /* Extensions.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		89A4217E21D0C52E00CE8B74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89A4218321D0C52F00CE8B74 /* ComponentDemo.app */,
+				89A4218521D0C52F00CE8B74 /* ComponentDemoTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +187,7 @@
 				TargetAttributes = {
 					89A4213321D0C38100CE8B74 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					89A4213C21D0C38100CE8B74 = {
 						CreatedOnToolsVersion = 10.1;
@@ -164,6 +204,12 @@
 			mainGroup = 89A4212A21D0C38100CE8B74;
 			productRefGroup = 89A4213521D0C38100CE8B74 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 89A4217E21D0C52E00CE8B74 /* Products */;
+					ProjectRef = 89A4217D21D0C52E00CE8B74 /* ComponentDemo.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				89A4213321D0C38100CE8B74 /* ComponentPack */,
@@ -171,6 +217,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		89A4218321D0C52F00CE8B74 /* ComponentDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ComponentDemo.app;
+			remoteRef = 89A4218221D0C52F00CE8B74 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		89A4218521D0C52F00CE8B74 /* ComponentDemoTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ComponentDemoTests.xctest;
+			remoteRef = 89A4218421D0C52F00CE8B74 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		89A4213221D0C38100CE8B74 /* Resources */ = {
@@ -194,6 +257,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89A4215021D0C4FC00CE8B74 /* BannerView.swift in Sources */,
+				89A4218B21D0C6FB00CE8B74 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +406,7 @@
 		89A4214921D0C38100CE8B74 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +424,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hailong.ComponentPack;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +433,7 @@
 		89A4214A21D0C38100CE8B74 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +459,7 @@
 		89A4214C21D0C38100CE8B74 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 95WF67PKAL;
 				INFOPLIST_FILE = ComponentPackTests/Info.plist;
@@ -409,6 +478,7 @@
 		89A4214D21D0C38100CE8B74 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 95WF67PKAL;
 				INFOPLIST_FILE = ComponentPackTests/Info.plist;
